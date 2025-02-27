@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-links li {
+  margin: 0 30px;
+}
+.active {
+  color: #fc036b;
+  text-decoration: underline;
+  font-weight: bold;
+}
+header {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: flex-end;
+  background: url("./img/header-bg.png");
+  background-size: cover;
+  justify-content: center;
+}
+.header-content {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+.header-content h2 {
+  font-size: 4vmin;
+}
+.line {
+  width: 150px;
+  height: 4px;
+  background: #fc036b;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.ctn:hover {
+  background-color: whitesmoke;
+  color: #fc036b;
+}
+
+/* Remove Blue Color from Contact Button */
+.nav-links .ctn {
+  background-color: #fc036b; /* background color */
+  color: whitesmoke; /* Keep text color */
+}
+.nav-links .ctn:hover {
+    background-color: whitesmoke;
+    color: #fc036b;
+}
+.nav-links li:hover {
+    color: #fc036b;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/*  Start Events Section Styling */
+section {
+  width: 80%;
+  margin: 80px auto; /* Centers the section horizontally */
+  max-width: 1200px; /* Added max-width for better responsiveness on larger screens */
+}
+
+/* Title Styling */
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #484872;
+  margin-bottom: 40px; /* Added margin for better spacing */
+}
+
+/* Row Styling */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  gap: 25%; /* Adds spacing between columns */
+}
+
+/* Column Styling */
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* Ensures columns take equal space */
+  min-width: 250px; /* Prevents columns from becoming too narrow */
+}
+
+/* Events Section Specific Styling */
+.events .row {
+  margin-top: 50px;
+}
+
+/* Heading Styling */
+h4 {
+  font-size: 3vmin;
+  color: #484872;
+  margin: 20px 0; /* Adjusted margin for consistency */
+  text-align: center; /* Ensures headings are centered */
+}
+
+/* Paragraph Styling */
+p {
+  color: #7c7c7c;
+  padding: 0 20px; /* Reduced padding for better readability */
+  text-align: center; /* Centers text for better alignment */
+  line-height: 1.6; /* Improves readability */
+}
+
+/* Button Container Styling */
+.events .ctn {
+  margin-top: 30px;
+  text-align: center; /* Centers the button */
+}
+/* End Events */
+
+/* Start Explore */
+.explore {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./img/bg2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.explore-content {
+  width: 60%;
+  padding: 50px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.explore-content h1 {
+  font-size: 7vmin;
+}
+.explore-content .line {
+  margin-bottom: 50px;
+}
+.explore-content p {
+  color: aliceblue;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.explore-content .ctn {
+  margin-top: 10px;
+}
+/* End Expolre */
+/* Start Tours */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Spacing between columns */
+    align-items: center; /* Vertically center content */
+  }
+  
+  /* Content Styling */
+  .content h1 {
+    font-size: 7vmin;
+    color: #484872;
+  }
+  
+  
+  
+  .content p {
+    color: #7c7c7c;
+    margin: 20px 0;
+  }
+  
+  .ctn {
+    padding: 8px 15px;
+    background: #fc036b;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    /* margin: 30%; */
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for images */
+    gap: 20px; /* Spacing between images */
+  }
+  
+  .gallery img {
+    width: 100%;
+  }
+ 
+
+/* End Tours */
+/* Start Footer */
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+/* End Footer */
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Tablet Styles */
+    .navbar {
+      padding: 15px;
+    }
+  
+    .header-content {
+      margin-bottom: 100px;
+    }
+  
+    .header-content h1 {
+      font-size: 6vmin;
+    }
+  
+    .explore-content {
+      width: 80%; /* Wider content for tablets */
+    }
+  
+    .grid {
+      grid-template-columns: 1fr; /* Stack columns on tablets */
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+  }
+
+/* Mobile */
+@media (max-width: 850px) {
+    /* Navbar */
+    .menu-btn {
+      display: block; /* Show the menu button */
+    }
+  
+    .navbar {
+      padding: 0; /* Remove padding */
+    }
+  
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px; /* Position the logo */
+    }
+  
+    .nav-links {
+      flex-direction: column; /* Stack nav links vertically */
+      width: 100%;
+      height: 100vh; /* Full viewport height */
+      justify-content: center; /* Center links vertically */
+      background: #484872; /* Background color */
+      margin-top: -900px; /* Hide nav links off-screen */
+      transition: all 0.5s ease; /* Smooth transition */
+    }
+  
+    .mobile-menu {
+      margin-top: 0; /* Bring nav links into view */
+      border-bottom-right-radius: 30%; /* Rounded corner */
+    }
+  
+    .nav-links li {
+      margin: 30px auto; /* Spacing between nav links */
+    }
+  
+    /* Header */
+    .header-content {
+      margin-bottom: 50px; /* Adjust spacing */
+    }
+  
+    .header-content h1 {
+      font-size: 5vmin; /* Smaller font size for mobile */
+    }
+  
+    /* Rows and Columns */
+    .row {
+      flex-direction: column; /* Stack columns vertically */
+    }
+  
+    .row .col {
+      margin: 20px auto; /* Spacing between columns */
+      width: 90%; /* Full width for columns */
+    }
+  
+    .col img {
+      width: 100%; /* Make images responsive */
+    }
+  
+    /* Events Section */
+    .events .col {
+      width: 100%; /* Full width for event columns */
+    }
+  
+    /* Explore Section */
+    .explore-content {
+      width: 100%; /* Full width for explore content */
+    }
+  
+    .explore-content h1 {
+      font-size: 5vmin; /* Smaller font size for mobile */
+    }
+  
+    /* Tours Section */
+    .tours .col {
+      width: 100%; /* Full width for tour columns */
+    }
+  
+    .grid {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+      }
+      .content {
+        padding: 15px;
+        margin: auto;
+      }
+      .gallery {
+        grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+      }
+    
+      .gallery img {
+        width: 100%; /* Full width for images on mobile */
+      }
+      .tours .grid .content .ctn {
+        display: flex;
+        justify-content: center;
+      }
+  
+    /* Footer */
+    .footer {
+      padding: 10px; /* Add padding to footer */
+    }
+  }
+
+  /* Animation */
+  img {
+    transition: transform .3s ease;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1 class="logo">ADVENTURE</h1>
+      <ul class="nav-links">
+        <li class="active"><a href="#"></a>Home</li>
+        <li><a href="#"></a>Tours</li>
+        <li><a href="#"></a>Explore</li>
+        <li><a href="#"></a>About</li>
+        <li class="ctn"><a href="#"></a>Contact</li>
+      </ul>
+      <img src="./img/menu-btn.png" alt="Menu Button" class="menu-btn" />
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <h2>Explore the Colorful World</h2>
+        <div class="line"></div>
+        <h1>A Wonderful Gift</h1>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </header>
+
+    <!-- Events Section -->
+    <section class="events" aria-labelledby="events-heading">
+      <div class="title">
+        <h1 id="events-heading">Upcoming Events</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./img/img1.png" alt="Everest Camp Trek" />
+          <h4>Everest Camp Trek</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            reiciendis quod consectetur quisquam eveniet, laudantium ipsam harum
+            officiis impedit expedita laboriosam atque voluptate neque tempora.
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col">
+          <img src="./img/img2.png" alt="Walking Holidays" />
+          <h4>Walking Holidays</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            reiciendis quod consectetur quisquam eveniet, laudantium ipsam harum
+            officiis impedit expedita laboriosam atque voluptate neque tempora.
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore" aria-labelledby="explore-heading">
+      <div class="explore-content">
+        <h1 id="explore-heading">EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel et harum
+          ab nihil repellat ipsam nulla exercitationem praesentium atque?
+          Facilis Ea.
+        </p>
+        <a href="#" class="ctn">Learn more</a>
+      </div>
+    </section>
+    
+    <section class="tours">
+        <div class="grid">
+          <div class="content">
+            <h1>UPCOMING TOURS OF DESTINATION</h1>
+            <div class="line"></div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+              alias, recusandae id omnis molestias nam incidunt et atque Quod
+              saepe, dicta reiciendis tempore iusto quam eveniet, repellat atque
+              nam molestiae nisi architecto odio!
+            </p>
+            <a href="#" class="ctn">Learn More</a>
+          </div>
+          <div class="gallery">
+            <img src="./img/img3.png" alt="Mountain View" />
+            <img src="./img/img4.png" alt="Forest Trail" />
+            <img src="./img/img5.png" alt="Beach Scene" />
+            <img src="./img/img6.png" alt="City Skyline" />
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <p>123 Fifth Avenue , NY 10122 NEW YORK, USA | Phone: 800+123+142 | Email: contact@example.com</p>
+        <p>Coperight @ 2020 Outdoor Adventure</p>
+      </section>
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
