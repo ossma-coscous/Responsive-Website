@@ -38,7 +38,7 @@ body {
   text-decoration: underline;
   font-weight: bold;
 }
-header {
+/* header {
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -46,11 +46,20 @@ header {
   background: url("./img/header-bg.png");
   background-size: cover;
   justify-content: center;
-}
+} */
 .header-content {
-  margin-bottom: 150px;
   color: whitesmoke;
-  text-align: center;
+  background: url('./img/header-bg.png');
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.cont {
+    margin-top: 20%;
+    text-align: center;
+
 }
 .header-content h2 {
   font-size: 4vmin;
@@ -160,9 +169,7 @@ p {
 /* Start Explore */
 /* Explore Section */
 .explore {
-  max-width: 1200px;
-  overflow: hidden;
-  width: 100vw; /* Full viewport width */
+  width: 100vw;/* Full viewport width */
   height: 100vh; /* Full viewport height */
   background: url("./img/bg2.png");
   background-position: center;
@@ -244,7 +251,7 @@ p {
 /* End Tours */
 /* Start Footer */
 .footer {
-    width: 100vw;
+  width: 100%;
   min-height: 100px;
   padding: 20px 80px;
   margin: 0;
@@ -329,7 +336,9 @@ p {
   .header-content h1 {
     font-size: 5vmin; /* Smaller font size for mobile */
   }
-
+  .cont {
+    margin-top: 60%;
+  }
   /* Rows and Columns */
   .row {
     flex-direction: column; /* Stack columns vertically */
@@ -356,8 +365,22 @@ p {
 
   .explore-content h1 {
     font-size: 5vmin; /* Smaller font size for mobile */
+    margin-left: 70%;
   }
-
+  .explore .line {
+    margin-left: 53%;
+  }
+  .explore-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-left: 70%;
+  }
+  .explore .ctn {
+    margin-left: 80%;
+    width: 110px;
+    margin-bottom: 15px;
+    
+  }
   /* Tours Section */
   .tours .col {
     width: 100%; /* Full width for tour columns */
@@ -368,7 +391,8 @@ p {
   }
   .content {
     padding: 15px;
-    margin: auto;
+    margin: auto ;
+
   }
   .gallery {
     grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
