@@ -80,11 +80,11 @@ header {
   color: whitesmoke; /* Keep text color */
 }
 .nav-links .ctn:hover {
-    background-color: whitesmoke;
-    color: #fc036b;
+  background-color: whitesmoke;
+  color: #fc036b;
 }
 .nav-links li:hover {
-    color: #fc036b;
+  color: #fc036b;
 }
 
 .menu-btn {
@@ -160,11 +160,11 @@ p {
 /* Start Explore */
 /* Explore Section */
 .explore {
-    max-width: 1200px;
-    overflow: hidden;
+  max-width: 1200px;
+  overflow: hidden;
   width: 100vw; /* Full viewport width */
   height: 100vh; /* Full viewport height */
-  background-image: url("./img/bg2.png");
+  background: url("./img/bg2.png");
   background-position: center;
   background-size: cover; /* Ensure the image covers the entire section */
   background-repeat: no-repeat;
@@ -205,197 +205,193 @@ p {
 /* End Expolre */
 /* Start Tours */
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px; /* Spacing between columns */
-    align-items: center; /* Vertically center content */
-  }
-  
-  /* Content Styling */
-  .content h1 {
-    font-size: 7vmin;
-    color: #484872;
-  }
-  
-  
-  
-  .content p {
-    color: #7c7c7c;
-    margin: 20px 0;
-  }
-  
-  .ctn {
-    padding: 8px 15px;
-    background: #fc036b;
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
-    /* margin: 30%; */
-  }
-  
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns for images */
-    gap: 20px; /* Spacing between images */
-  }
-  
-  .gallery img {
-    width: 100%;
-  }
- 
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Spacing between columns */
+  align-items: center; /* Vertically center content */
+}
+
+/* Content Styling */
+.content h1 {
+  font-size: 7vmin;
+  color: #484872;
+}
+
+.content p {
+  color: #7c7c7c;
+  margin: 20px 0;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background: #fc036b;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  /* margin: 30%; */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for images */
+  gap: 20px; /* Spacing between images */
+}
+
+.gallery img {
+  width: 100%;
+}
 
 /* End Tours */
 /* Start Footer */
 .footer {
     width: 100vw;
-    min-height: 100px;
-    padding: 20px 80px;
-    margin: 0;
-    background: #484872;
-    text-align: center;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background: #484872;
+  text-align: center;
 }
 .footer p {
-    color: whitesmoke;
-    margin: 20px auto;
+  color: whitesmoke;
+  margin: 20px auto;
 }
 /* End Footer */
 
-
 /* Responsive Design */
 @media (max-width: 1024px) {
-    /* Tablet Styles */
-    .navbar {
-      padding: 15px;
-    }
-  
-    .header-content {
-      margin-bottom: 100px;
-    }
-  
-    .header-content h1 {
-      font-size: 6vmin;
-    }
-  
-    .explore-content {
-      width: 80%; /* Wider content for tablets */
-    }
-  
-    .grid {
-      grid-template-columns: 1fr; /* Stack columns on tablets */
-    }
-  
-    .gallery {
-      grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
-    }
+  /* Tablet Styles */
+  .navbar {
+    padding: 15px;
   }
+
+  .header-content {
+    margin-bottom: 100px;
+  }
+
+  .header-content h1 {
+    font-size: 6vmin;
+  }
+
+  .explore-content {
+    width: 80%; /* Wider content for tablets */
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Stack columns on tablets */
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+  }
+}
 
 /* Mobile */
 @media (max-width: 850px) {
-    /* Navbar */
-    .menu-btn {
-      display: block; /* Show the menu button */
-    }
-  
-    .navbar {
-      padding: 0; /* Remove padding */
-    }
-  
-    .logo {
-      position: absolute;
-      top: 30px;
-      left: 30px; /* Position the logo */
-    }
-  
-    .nav-links {
-      flex-direction: column; /* Stack nav links vertically */
-      width: 100%;
-      height: 100vh; /* Full viewport height */
-      justify-content: center; /* Center links vertically */
-      background: #484872; /* Background color */
-      margin-top: -900px; /* Hide nav links off-screen */
-      transition: all 0.5s ease; /* Smooth transition */
-    }
-  
-    .mobile-menu {
-      margin-top: 0; /* Bring nav links into view */
-      border-bottom-right-radius: 30%; /* Rounded corner */
-    }
-  
-    .nav-links li {
-      margin: 30px auto; /* Spacing between nav links */
-    }
-  
-    /* Header */
-    .header-content {
-      margin-bottom: 50px; /* Adjust spacing */
-    }
-  
-    .header-content h1 {
-      font-size: 5vmin; /* Smaller font size for mobile */
-    }
-  
-    /* Rows and Columns */
-    .row {
-      flex-direction: column; /* Stack columns vertically */
-    }
-  
-    .row .col {
-      margin: 20px auto; /* Spacing between columns */
-      width: 90%; /* Full width for columns */
-    }
-  
-    .col img {
-      width: 100%; /* Make images responsive */
-    }
-  
-    /* Events Section */
-    .events .col {
-      width: 100%; /* Full width for event columns */
-    }
-  
-    /* Explore Section */
-    .explore-content {
-      width: 100%; /* Full width for explore content */
-    }
-  
-    .explore-content h1 {
-      font-size: 5vmin; /* Smaller font size for mobile */
-    }
-  
-    /* Tours Section */
-    .tours .col {
-      width: 100%; /* Full width for tour columns */
-    }
-  
-    .grid {
-        grid-template-columns: 1fr; /* Stack columns on smaller screens */
-      }
-      .content {
-        padding: 15px;
-        margin: auto;
-      }
-      .gallery {
-        grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
-      }
-    
-      .gallery img {
-        width: 100%; /* Full width for images on mobile */
-      }
-      .tours .grid .content .ctn {
-        display: flex;
-        justify-content: center;
-      }
-  
-    /* Footer */
-    .footer {
-      padding: 10px; /* Add padding to footer */
-    }
+  /* Navbar */
+  .menu-btn {
+    display: block; /* Show the menu button */
   }
 
-  /* Animation */
-  img {
-    transition: transform .3s ease;
+  .navbar {
+    padding: 0; /* Remove padding */
   }
-  img:hover {
-    transform: scale(1.1);
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px; /* Position the logo */
   }
+
+  .nav-links {
+    flex-direction: column; /* Stack nav links vertically */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    justify-content: center; /* Center links vertically */
+    background: #484872; /* Background color */
+    margin-top: -900px; /* Hide nav links off-screen */
+    transition: all 0.5s ease; /* Smooth transition */
+  }
+
+  .mobile-menu {
+    margin-top: 0; /* Bring nav links into view */
+    border-bottom-right-radius: 30%; /* Rounded corner */
+  }
+
+  .nav-links li {
+    margin: 30px auto; /* Spacing between nav links */
+  }
+
+  /* Header */
+  .header-content {
+    margin-bottom: 50px; /* Adjust spacing */
+  }
+
+  .header-content h1 {
+    font-size: 5vmin; /* Smaller font size for mobile */
+  }
+
+  /* Rows and Columns */
+  .row {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .row .col {
+    margin: 20px auto; /* Spacing between columns */
+    width: 90%; /* Full width for columns */
+  }
+
+  .col img {
+    width: 100%; /* Make images responsive */
+  }
+
+  /* Events Section */
+  .events .col {
+    width: 100%; /* Full width for event columns */
+  }
+
+  /* Explore Section */
+  .explore-content {
+    width: 100%; /* Full width for explore content */
+  }
+
+  .explore-content h1 {
+    font-size: 5vmin; /* Smaller font size for mobile */
+  }
+
+  /* Tours Section */
+  .tours .col {
+    width: 100%; /* Full width for tour columns */
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+  .content {
+    padding: 15px;
+    margin: auto;
+  }
+  .gallery {
+    grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+  }
+
+  .gallery img {
+    width: 100%; /* Full width for images on mobile */
+  }
+  .tours .grid .content .ctn {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 10px; /* Add padding to footer */
+  }
+}
+
+/* Animation */
+img {
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.1);
+}
